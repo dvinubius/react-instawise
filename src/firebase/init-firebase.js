@@ -3,14 +3,14 @@ import "firebase/storage";
 import "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDGb5WY_-ES6E6whZReYw8elZ1Ek7UEOGg",
-  authDomain: "firegram-dvn.firebaseapp.com",
-  databaseURL: "https://firegram-dvn.firebaseio.com",
-  projectId: "firegram-dvn",
-  storageBucket: "firegram-dvn.appspot.com",
-  messagingSenderId: "580641387881",
-  appId: "1:580641387881:web:128abb05d1d315ee6739f8",
-  measurementId: "G-73YJZSY0YL",
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUT_HDOMAIN,
+  databaseURL: process.env.DATABASE_URL,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID,
 };
 
 firebase.initializeApp(firebaseConfig);
